@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahoperi Sweets - Chocolates Ferrero Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6b3e26;
+      --secondary: #d4a76a;
+      --accent: #a51d21;
+      --light: #f8f4f0;
+      --dark: #2a1a0f;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background: linear-gradient(rgba(42, 26, 15, 0.8), rgba(42, 26, 15, 0.8)), url('https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: var(--secondary);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .tagline {
+      font-size: 1.5rem;
+      margin: 20px 0 0;
+      font-weight: 300;
+    }
+    
+    .contact-info {
+      background-color: var(--primary);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    
+    .contact-info a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-info a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    .intro {
+      padding: 60px 0;
+      text-align: center;
+      background-color: white;
+    }
+    
+    .intro h2 {
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+    
+    .intro p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: #8a171a;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(165, 29, 33, 0.3);
+    }
+    
+    .form-section {
+      padding: 60px 0;
+      background-color: var(--light);
+    }
+    
+    .form-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .form-container h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 8px;
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.9rem;
+    }
+    
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      .tagline {
+        font-size: 1.2rem;
+      }
+      
+      .intro h2 {
+        font-size: 1.8rem;
+      }
+      
+      .form-container {
+        padding: 20px;
+      }
+      
+      .contact-info {
+        font-size: 1rem;
+        padding: 10px 0;
+      }
+      
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jahoperi Sweets</h1>
+      <p class="tagline">Chocolates Ferrero - Lujo en cada bocado</p>
+    </div>
+  </header>
+  
+  <div class="contact-info">
+    <div class="container">
+      <p>Contáctanos directamente: <a href="tel:+522461593018">+52 246 159 3018</a></p>
+    </div>
+  </div>
+  
+  <section class="intro">
+    <div class="container">
+      <h2>Experiencia Ferrero Premium</h2>
+      <p>Descubre la exquisitez de los auténticos chocolates Ferrero, seleccionados cuidadosamente para ofrecerte la máxima calidad y el sabor inigualable que solo la marca italiana puede brindar. Cada pieza es una obra maestra de repostería fina.</p>
+      <p>Nuestros productos incluyen Ferrero Rocher, Raffaello, Kinder y las exclusivas ediciones limitadas que deleitarán tu paladar y serán el regalo perfecto para ocasiones especiales.</p>
+    </div>
+  </section>
+  
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <h2>Solicita información o haz tu pedido</h2>
+        <p>Completa el siguiente formulario o llámanos directamente al <strong>+52 246 159 3018</strong> para realizar tu pedido de chocolates Ferrero.</p>
+        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeAPVVwevOkMC1Hsc7W-YoBwbfXffv0INvZKoo2hMNlDL-NLA/viewform?embedded=true" width="640" height="1716" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>Horario de atención: Lunes a Viernes 9:00 - 18:00 | Sábados 10:00 - 14:00</p>
+      <p>Teléfono: <a href="tel:+522461593018" style="color: var(--secondary);">+52 246 159 3018</a></p>
+      <p>&copy; 2025 Jahoperi Sweets. Todos los derechos reservados.</p>
+      <p>Chocolates Ferrero - Productos importados premium</p>
+    </div>
+  </footer>
+  
+  <a href="https://wa.me/522461593018" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <!-- Font Awesome para íconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
